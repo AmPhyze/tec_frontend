@@ -16,7 +16,7 @@ const Layout: NextPage<props> = ({ children, title }) => {
   return (
     <div>
       <Head>
-        <title>{title} | Thailand endurance cup</title>
+        <title>{title} | Thailand Endurance Cup</title>
       </Head>
       <Navbar />
       <main>{children}</main>

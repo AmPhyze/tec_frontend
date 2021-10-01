@@ -1,13 +1,15 @@
 // Import packages
 import type { NextPage } from "next";
+import dynamic from "next/dynamic";
 
-// Import layout
-import Layout from "@components/Layout";
+// Import Components
+const Layout = dynamic(import("@components/Layout"))
+const Homepage = dynamic(import("@components/Homepage"));
 
 const Pages: NextPage = () => {
   return (
     <Layout title="Home">
-      <p className="text-center text-3xl">{"Edit me please! :)"}</p>
+      <Homepage />
     </Layout>
   );
 };
